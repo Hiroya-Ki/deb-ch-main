@@ -37,7 +37,7 @@
     <p>左派: <?php echo $left_result;?></p>
     <p>右派: <?php echo $right_result;?></p>
 
-    <form action="thanks.php" method="POST">
+    <form action="thanks" method="GET">
         <input type="hidden" name="title" value="<?php echo $title_result;?>">
         <input type="hidden" name="left" value="<?php echo $left_result;?>">
         <input type="hidden" name="right" value="<?php echo $right_result;?>">
