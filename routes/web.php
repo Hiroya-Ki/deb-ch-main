@@ -20,8 +20,8 @@ use App\Http\Controllers\ThreadsController;
 
 Route::get('/', [ThreadsController::class, 'index']);
 Route::get('threads/create', [ThreadsController::class, 'create'])->name('threads.create');
-Route::get('threads/check', [ThreadsController::class, 'check'])->name('threads.check');
-Route::get('threads/thanks', [ThreadsController::class, 'create'])->name('threads.thanks');
+Route::post('threads/check', [ThreadsController::class, 'check'])->name('threads.check');
+Route::get('threads/thanks', [ThreadsController::class, 'thanks'])->name('threads.thanks');
 Route::post('threads/create', [ThreadsController::class, 'store']);
 
 Auth::routes();

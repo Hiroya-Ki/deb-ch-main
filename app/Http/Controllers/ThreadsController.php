@@ -57,7 +57,7 @@ class ThreadsController extends Controller
 
         Thread::create($inputs);
 
-        return redirect('threads')
+        return redirect('threads');
     }
 
     /**
